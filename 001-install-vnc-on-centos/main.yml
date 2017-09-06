@@ -1,0 +1,7 @@
+---
+- hosts: openstack1
+  tasks:
+    - debug:
+        msg: " hostname is {{ inventory_hostname }} "
+  roles:
+    - rhtps.vnc

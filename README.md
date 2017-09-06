@@ -4,11 +4,11 @@ Ansible galaxy roles collection
 ## ansible galaxy
 + Galaxy provides pre-packaged units of work known to Anasible as roles
 + Roles can be dropped into Ansible PlayBooks and immediately put to work
-+ You can regard ansible-glaxy binary as python's pip
++ You can regard ansible-galaxy binary as python's pip
 + Your can always install a role from internet by
 
 ```
-$ ansible-glaxy install uername.rolename
+$ ansible-galaxy install uername.rolename
 ```
 
 + However, previous usage will install role to *ANSIBLE_ROLES_PATH*, which is
@@ -16,7 +16,7 @@ $ ansible-glaxy install uername.rolename
 to run following command to install a role
 
 ```
-$ ansible-glaxy install --roles-path . uername.rolename
+$ ansible-galaxy install --roles-path . uername.rolename
 ```
 
 + If you want to install multiple roles at one, you should first create a .yml file
@@ -52,5 +52,5 @@ like install_roles.yml here
 + And then you install all of them by
 
 ```
-$ ansible-glaxy install -r install_roles.yml
+$ ansible-galaxy install --roles-path . -r install_roles.yml
 ```
